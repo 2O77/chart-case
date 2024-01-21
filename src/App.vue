@@ -1,16 +1,14 @@
 <template>
     <div id="index">
         <Chart />
-        <!-- <Circle /> -->
     </div>
 </template>
 
 <script>
-    import Chart from "./components/chart.vue";
-    import Circle from "./components/circle.vue";
+    import Chart from "./components/line-chart.vue";
     export default {
         name: "App",
-        components: {Chart, Circle},
+        components: {Chart},
     };
 </script>
 

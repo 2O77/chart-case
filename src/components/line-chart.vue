@@ -187,8 +187,6 @@
                                 display: true,
                                 position: "right",
                                 align: "start",
-                                rtl: false,
-                                fullSize: true,
                                 reverse: true,
                                 labels: {
                                     usePointStyle: true,
