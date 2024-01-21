@@ -37,15 +37,18 @@
             const datasets = this.generateRandomDatasets();
             const ctx = this.$refs.LineChart.getContext("2d");
 
-            const bgColor1 = this.setAlphaChannel(datasets[0].color, 0.1);
-            const bgColor2 = this.setAlphaChannel(datasets[0].color, 0);
+            const backgroundColor1 = this.setAlphaChannel(
+                datasets[0].color,
+                0.1
+            );
+            const backgroundColor2 = this.setAlphaChannel(datasets[0].color, 0);
 
-            const gradientBg = ctx.createLinearGradient(0, 0, 0, 1400);
+            const gradientBackground = ctx.createLinearGradient(0, 0, 0, 1400);
 
-            gradientBg.addColorStop(0, bgColor1);
-            gradientBg.addColorStop(0.1, bgColor2);
+            gradientBackground.addColorStop(0, backgroundColor1);
+            gradientBackground.addColorStop(0.1, backgroundColor2);
 
-            this.createChart(ctx, datasets, gradientBg);
+            this.createChart(ctx, datasets, gradientBackground);
         },
 
         methods: {
